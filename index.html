@@ -20,11 +20,11 @@
             <img src="https://www.pluspagos.com/themes/img/home/plus-header.png" alt="logo plus pagos">
         </div>
         <div class="header-accesos">
-            <button>Sucursales</button>
-            <button>Facturas</button>
-            <button>Productos</button>
-            <button>Nosotros</button>
-            <button id="boton-header-pagar">Paga acá</button>
+            <a href="#sucursales">Sucursales</a>
+            <a href="#facturas">Facturas</a>
+            <a href="#productos">Productos</a>
+            <a href="contactanos">Contactanos</a>
+            <a href="#facturas" id="boton-header-pagar" >Paga acá</a>
         </div>
     </header>
 
@@ -59,7 +59,7 @@
     </section>
     
     <!-- section impuestos -->
-    <section class="seccion-impuestos">
+    <section class="seccion-impuestos" id="facturas">
         <div class="impuestos-img">
             <img src="https://cdn.bioguia.com/embed/d76fc877355422ce139363b181aa21640802222/mujer-trabajando-ordenador.jpg?imagick=1&size=1250" alt="mujer en computadora">
         </div>
@@ -79,7 +79,7 @@
     </section>
 
     <!-- section sucursales -->
-    <section class="seccion-sucursales">
+    <section class="seccion-sucursales" id="sucursales">
         <h3>¿Donde y qué pago?</h3>
         <p>
             Encontrá la sucursal más cercana
@@ -106,7 +106,7 @@
     </section>
 
     <!-- section productos -->
-    <section class="seccion-productos">
+    <section class="seccion-productos" id="productos">
         <h3>Aprendé más sobre nuestros productos</h3>
         <div class="contenedor-videos">
             <div class="video">
@@ -132,7 +132,7 @@
         -- el archivo en el xampp/htdocs es una copia,
         si actualizo algo tengo q copiar y pegar devuelta
     -->
-    <form action="procesar.php" method="post">
+    <form action="procesar.php" method="post" id="contactanos">
         <h3>¡Dejanos tu comentario!</h3>
         <label for="nombre">Nombre*</label>
         <input type="text" name="nombre" id="nombre" required>

@@ -77,10 +77,14 @@ header{
 .header-accesos{
     width: 50vw;
 }
-button{
+.header-accesos a{
     cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.header-accesos button{
+.header-accesos a{
     font-family: 'Montserrat', sans-serif;
     background-color: transparent;
     color: #5d5d5d;
@@ -91,6 +95,7 @@ button{
 #boton-header-pagar{
     background-color: #005079;
     border-radius: 15px;
+    padding: 0 .5rem;
 }
 #boton-header-pagar:hover{
     background-color: #1EBCE2;
