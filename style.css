@@ -24,7 +24,8 @@ footer .contenedor-informacion div .contenedor-redes{
 
 .seccion-sucursales, 
 .sucursales, 
-.seccion-productos, 
+.seccion-productos,
+form, 
 footer,
 .contenedor-informacion div,
 .contenedor-informacion div a,
@@ -57,7 +58,8 @@ footer{
 .seccion-sucursales, 
 .seccion-box,
 .seccion-impuestos,
-.seccion-productos, 
+.seccion-productos,
+form, 
 footer{
     padding: 6rem 0rem;
 }
@@ -67,6 +69,10 @@ header{
     height: 15vh;
     background-color: #FAFAFA;
     padding: 2rem;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 100;
 }
 .header-accesos{
     width: 50vw;
@@ -90,12 +96,15 @@ button{
     background-color: #1EBCE2;
 }
 
-/* section carrusel  */
-.carrusel, .videos-youtube a{
+/* section seccion-carrusel  */
+.seccion-carrusel{
+    margin-top: 10rem;
+}
+.seccion-carrusel, .videos-youtube a{
     display: flex;
     justify-content: center;
 }
-.carrusel img{
+.seccion-carrusel img{
     width: 90vw;  
     animation: shake 25s infinite;  
 }
@@ -217,6 +226,51 @@ button{
     padding-right: 15px;
 }
 
+/* form */
+form{
+    background-color: #FAFAFA;
+    color: #424242;
+}
+form h3{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+form label{
+    font-size: 1.2rem;
+    margin: .5rem 0;
+}
+form input, form textarea{
+    border-radius: 10px;
+    border: 1px solid #a1a1a184;
+    padding: .4rem 2.5rem;
+    font-size: 1.5rem;
+}
+form input:hover,
+form textarea:hover{
+    background-color: #a1a1a184;
+    color: #FAFAFA;
+}
+form input:focus,
+form textarea:focus{
+    outline: none;
+}
+form #submit{
+    margin-top: 1.5rem;
+    background-color: transparent;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #424242;
+}
+form #submit:hover{
+    background-color: #a1a1a184;
+    color: #FAFAFA;
+}
+#edad::-webkit-outer-spin-button,
+#edad::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+} 
 
 /* footer  */
 footer .contenedor-informacion div h4{
@@ -268,11 +322,7 @@ footer .contenedor-registro #ver-mas{
     border-radius: 50%;
     background: magenta;
 } */
-/* #edad::-webkit-outer-spin-button,
-#edad::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-} */
+
 
 
 /* animacion */
