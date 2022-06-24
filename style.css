@@ -360,3 +360,145 @@ footer .contenedor-registro #ver-mas{
       transform: translateX(50px);
     }
 }
+/* responsive */
+
+@media screen and (max-width: 1024px){
+    iframe{
+        width: 400px;
+    }
+    .video{
+        margin-left: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    iframe{
+        width: 300px;
+    }
+    .video{
+        margin-left: 1.5rem;
+    }
+    .header-accesos a {
+        font-size: .7rem;
+    }
+    .seccion-carrusel {
+        margin-top: 6rem;
+    }
+    .seccion-sucursales h3 {
+        font-size: 2.5rem;
+    }
+    .contenedor-servicios h3 {
+        font-size: 1.2rem;
+    }
+    .seccion-sucursales p,
+    .sucursales label,
+    .videos-youtube, form #submit,
+    form label,
+    form input, form textarea {
+        font-size: 1rem;
+    }
+    .seccion-productos h3,
+    form h3 {
+        font-size: 1.7rem;
+    }
+    .videos-youtube a img {
+        width: 10%;
+    }
+    footer .contenedor-informacion div h4,
+    .contenedor-informacion div a,
+    footer .contenedor-registro p {
+        font-size: .8rem;
+    }
+    .contenedor-informacion div .contenedor-redes a i {
+        font-size: 1.1rem;
+    }
+    .contenedor-informacion div img {
+        width: 80%;
+    }
+    footer .contenedor-registro p{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 475px){
+    .header-logo img{
+        width: 25vw;
+    }
+    .header-accesos a{
+        display: none;
+    }
+    .seccion-carrusel img {
+        width: 80vw;
+    }
+    .seccion-sucursales, 
+    .seccion-box, 
+    .seccion-impuestos, 
+    .seccion-productos, 
+    form, 
+    footer {
+        padding: 3rem 0rem;
+    }
+    .sucursales select {
+        padding: 0.2rem;
+        font-size: .6rem;
+    }
+    .contenedor-servicios h3 {
+        font-size: .8rem;
+    }
+    .contenedor-videos{
+        display: flex;
+        flex-direction: column;
+    }
+    .contenedor-servicios button {
+        font-size: .7rem;
+        padding: 0.1rem 0.7rem;
+        border: 2px solid #1EBCE2;
+    }
+    .seccion-sucursales h3 {
+        font-size: 1.7rem;
+    }
+    .seccion-sucursales p, 
+    .sucursales label, 
+    .videos-youtube, 
+    form #submit, 
+    form label, 
+    form input, 
+    form textarea {
+        font-size: .8rem;
+    }
+    .seccion-productos h3, form h3 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .video {
+        margin-bottom: 1.5rem;
+    }
+    .contenedor-videos {
+        padding-top: 3rem;
+    }
+    .videos-youtube a img {
+        width: 20%;
+    }
+    footer img{
+        width: 50vw;
+    }
+    footer .contenedor-informacion div h4, 
+    .contenedor-informacion div a, 
+    footer .contenedor-registro p {
+        font-size: .5rem;
+        text-align: center;
+    }
+    .contenedor-informacion div .contenedor-redes a i {
+        font-size: .7rem;
+    }
+    footer .contenedor-registro {
+        padding-top: 3rem;
+        width: 75vw;
+    }
+}
+
+
+@media screen and (max-width: 320px){
+
+    
+}
