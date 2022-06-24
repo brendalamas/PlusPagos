@@ -9,8 +9,8 @@
 > <img style="width:5%" src="https://cdn-icons-png.flaticon.com/512/732/732190.png"/>
 
 <br>
-🖋️ Estoy muy contenta por el trabajo que llevo realizando, pero abierta a cambios/sugerencias!
-<br>
+
+### 🖋️ ¡Mirá como va quedando <a href="https://brendalamas.github.io/PlusPagos/"> acá</a>!
 <br>
 <br>
 <br>
