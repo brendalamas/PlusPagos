@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(http://ticket.pluspagos.com:4703/img/bk.jpg);
+    font-family: 'Poppins', sans-serif;
+}
+body img{
+    width: 100vw;
+}
+.contenedor-id{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FAFAFA;
+    margin-top: 2rem;
+}
+.contenedor-id label{
+    font-size: 1.8rem;
+    width: 25vw;
+    text-align: center;
+    font-weight: 500;
+}
+.contenedor-id input{
+    border-radius: 15px;
+    border: none;
+    width: 25rem;
+    height: 3rem;
+    padding: 1rem;    
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+.contenedor-id input:focus{
+    outline: none;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+.contenedor-id button{
+    background-color: #00BED6;
+    color: #FAFAFA;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    cursor: pointer;
+}
