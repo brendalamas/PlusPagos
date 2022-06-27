@@ -430,6 +430,16 @@ footer .contenedor-registro #ver-mas{
     .seccion-carrusel img {
         width: 80vw;
     }
+    .contenedor-box {
+        width: 60vw;
+    }
+    .contenedor-box,
+    .primer-columna,
+    .segunda-columna{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .seccion-sucursales, 
     .seccion-box, 
     .seccion-impuestos, 
@@ -499,6 +509,15 @@ footer .contenedor-registro #ver-mas{
 
 
 @media screen and (max-width: 320px){
-
+    .seccion-carrusel img {
+        height: 30vw;
+    }
+    iframe{
+        width: 200px;
+        height: 200px;
+    }
+    .videos-youtube a img {
+        width: 30%;
+    }
     
 }
