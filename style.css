@@ -83,10 +83,11 @@ header{
     width: 100vw;
     z-index: 100;
 }
-.header-accesos{
-    width: 50vw;
+.header-accesos a{
+    margin-left: 1rem;
 }
 .header-accesos{
+    width: 50vw;
     font-family: 'Montserrat', sans-serif;
     background-color: transparent;
     border: none;
@@ -115,6 +116,7 @@ header{
     font-size: 1.2rem;
     justify-content: space-between;
     display: none;
+    cursor: pointer;
 }
 #boton-pagar-burger{
     margin-top: 0.5rem;
