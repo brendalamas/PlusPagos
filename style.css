@@ -16,12 +16,20 @@ header,
 .seccion-impuestos,
 .contenedor-videos,
 .contenedor-informacion,
-footer .contenedor-informacion div .contenedor-redes{
+.contenedor-redes{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
-
+.header-accesos,
+.seccion-box,
+.seccion-carrusel, 
+.seccion-productos,
+.videos-youtube a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .seccion-sucursales, 
 .sucursales, 
 .seccion-productos,
@@ -42,6 +50,7 @@ footer .contenedor-registro{
 }
 
 #boton-header-pagar,
+#boton-pagar-burger,
 .seccion-sucursales,
 .sucursales select,
 footer{
@@ -77,22 +86,21 @@ header{
 .header-accesos{
     width: 50vw;
 }
-.header-accesos a{
-    cursor: pointer;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.header-accesos a{
+.header-accesos{
     font-family: 'Montserrat', sans-serif;
     background-color: transparent;
-    color: #5d5d5d;
-    font-size: 1rem;
     border: none;
 }
+.header-accesos a,
+.menu-burger a{
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #5d5d5d;
+}
 
-#boton-header-pagar{
+#boton-header-pagar,
+#boton-pagar-burger{
     background-color: #005079;
     border-radius: 15px;
     padding: 0 .5rem;
@@ -100,27 +108,42 @@ header{
 #boton-header-pagar:hover{
     background-color: #1EBCE2;
 }
+.burger{
+    background-color: transparent;
+    color: #5d5d5d;
+    border: none;
+    font-size: 1.2rem;
+    justify-content: space-between;
+    display: none;
+}
+#boton-pagar-burger{
+    margin-top: 0.5rem;
+}
+.menu-burger{
+    display: none;
+}
+.display{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 1.5rem;
+    top: 4rem;
+    background-color: #FAFAFA;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid #cfcece;
+}
 
-/* section seccion-carrusel  */
+/* seccion-carrusel  */
 .seccion-carrusel{
     margin-top: 10rem;
-}
-.seccion-carrusel, .videos-youtube a{
-    display: flex;
-    justify-content: center;
 }
 .seccion-carrusel img{
     width: 90vw;  
     animation: shake 25s infinite;  
 }
 
-
-/* section box  */
-.seccion-box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+/* seccion box  */
 .contenedor-box{
     display: grid;
     grid-template-columns: auto auto;
@@ -177,7 +200,7 @@ header{
     color: #111111;
 }
 
-/* section sucursales  */
+/* seccion sucursales  */
 .seccion-sucursales{
     text-align: center;
 }
@@ -206,10 +229,9 @@ header{
     border: none;
 }
 
-/* section seccion-productos  */
+/* seccion-productos  */
 .seccion-productos{
     background-color: #C8E4E5;
-    display: flex;
 }
 .seccion-productos h3{
     font-size: 2.5rem;
@@ -378,11 +400,20 @@ footer .contenedor-registro #ver-mas{
     .video{
         margin-left: 1.5rem;
     }
+    .header-accesos{
+        display: none;
+    }
+    header .burger{
+        display: flex;
+    }
     .header-accesos a {
         font-size: .7rem;
     }
     .seccion-carrusel {
         margin-top: 6rem;
+    }
+    .seccion-carrusel img {
+        height: 30vw;
     }
     .seccion-sucursales h3 {
         font-size: 2.5rem;
@@ -423,9 +454,6 @@ footer .contenedor-registro #ver-mas{
 @media screen and (max-width: 475px){
     .header-logo img{
         width: 25vw;
-    }
-    .header-accesos a{
-        display: none;
     }
     .seccion-carrusel img {
         width: 80vw;
@@ -509,15 +537,27 @@ footer .contenedor-registro #ver-mas{
 
 
 @media screen and (max-width: 320px){
-    .seccion-carrusel img {
+    /* .seccion-carrusel img {
         height: 30vw;
-    }
+    } */
     iframe{
         width: 200px;
         height: 200px;
     }
     .videos-youtube a img {
         width: 30%;
+    }
+    .seccion-productos h3, form h3 {
+        font-size: 1.2rem;
+    }
+    .seccion-sucursales p, 
+    .sucursales label, 
+    .videos-youtube, 
+    form #submit, 
+    form label, 
+    form input, 
+    form textarea {
+        font-size: .6rem;
     }
     
 }
