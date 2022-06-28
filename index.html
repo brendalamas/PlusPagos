@@ -80,8 +80,8 @@
             <h3>
                 de <strong> cargos por servicio. </strong> 
             </h3>
-            <button>
-                <a href="./factura-digital.html" target="_blank">
+            <button id="boton-descargar">
+                <a href="./facturas/factura-digital.html" target="_blank">
                     Descargar
                 </a>
             </button>
@@ -96,16 +96,16 @@
             para pagar, retirar y depositar tu plata.
         </p>
         <div class="sucursales">
-            <label for="provincias">Provincias</label>
             <select name="provincias">
+                <option value="" selected>PROVINCIAS</option>
                 <option value="buenos aires">BUENOS AIRES</option>
                 <option value="chaco">CHACO</option>
                 <option value="corrientes">CORRIENTES</option>
                 <option value="entre rios">ENTRE RIOS</option>
                 <option value="mendoza">MENDOZA</option>
             </select>
-            <label for="localidades">Localidades</label>
             <select name="localidades">
+                <option value="" selected>LOCALIDADES</option>
                 <option value="25deMayo">25 DE MAYO</option>
                 <option value="9deJulio">9 DE JULIO</option>
                 <option value="alcorta">ALCORTA</option>
@@ -155,12 +155,6 @@
 
         <label for="comentarios">Comentarios</label>
         <textarea name="comentarios" id="comentarios" cols="25" rows="5"></textarea>
-        <!-- <input type="submit" value="enviar">
-        <label for="rango"> rango</label>
-        <input type="range" name="rango" id="rango"> 
-
-        <label for="negativo">NEGATIVO</label>
-        <input type="range" name="negativo" id="negativo" min="0" max="1" step="0.1" value="0"> -->
         <input type="submit" value="Enviar" id="submit">
     </form>
 
