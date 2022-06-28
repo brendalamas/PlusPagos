@@ -7,6 +7,8 @@
     <title>Facturacion Digital - WebFacturacionDigital</title>
     <link rel="stylesheet" href="factura-digital.css">
     <link rel="shortcut icon" href="https://cdn-icons.flaticon.com/png/512/2543/premium/2543344.png?token=exp=1656031152~hmac=88f93cedaa5f0d9d678f122c81ed5f04" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/35cd8eb970.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <img src="http://ticket.pluspagos.com:4703/img/Hands.jpg" alt="portada">
@@ -16,10 +18,17 @@
             que figura en el ticket.
         </label>
         <input type="number">
-        <button>
+        <button id="buscar">
             Buscar
         </button>
     </div>
-    
+    <div class="modal">
+        <p>¡ERROR!</p>
+        <p>La base de datos aun no fue creada :(</p>
+        <button class="cerrar-modal">
+            CERRAR      
+        </button>
+    </div>
+    <script src="./factura-digital.js"></script>
 </body>
 </html>

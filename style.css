@@ -1,3 +1,6 @@
+/*****************************
+    fonts
+******************************/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;500;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap');
 
@@ -10,7 +13,9 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-/* flexbox */
+/*****************************
+    flexbox
+******************************/
 header,
 .header-accesos,
 .seccion-impuestos,
@@ -43,7 +48,9 @@ footer .contenedor-registro{
     align-items: center;
 }
 
-/* color y background */
+/*****************************
+    color / background
+******************************/
 .header-accesos button:hover,
 .videos-youtube a{
     color: #000000;
@@ -63,7 +70,9 @@ footer{
     background-color: #03246D;
 }
 
-/* padding margin */
+/*****************************
+    padding / margin 
+******************************/
 .seccion-sucursales, 
 .seccion-box,
 .seccion-impuestos,
@@ -73,7 +82,9 @@ footer{
     padding: 6rem 0rem;
 }
 
-/* header */
+/*****************************
+    header
+******************************/
 header{
     height: 15vh;
     background-color: #FAFAFA;
@@ -136,7 +147,9 @@ header{
     border: 1px solid #cfcece;
 }
 
-/* seccion-carrusel  */
+/*****************************
+    seccion-carrusel
+******************************/
 .seccion-carrusel{
     margin-top: 10rem;
 }
@@ -145,7 +158,9 @@ header{
     animation: shake 25s infinite;  
 }
 
-/* seccion box  */
+/*****************************
+    seccion box
+******************************/
 .contenedor-box{
     display: grid;
     grid-template-columns: auto auto;
@@ -166,7 +181,9 @@ header{
     filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7)); 
 }
 
-/* seccion-impuestos */
+/*****************************
+    seccion-impuestos
+******************************/
 .seccion-impuestos{
     display: flex;
     justify-content: flex-start;
@@ -202,7 +219,9 @@ header{
     color: #111111;
 }
 
-/* seccion sucursales  */
+/*****************************
+    seccion sucursales 
+******************************/
 .seccion-sucursales{
     text-align: center;
 }
@@ -231,7 +250,9 @@ header{
     border: none;
 }
 
-/* seccion-productos  */
+/*****************************
+    seccion-productos  
+******************************/
 .seccion-productos{
     background-color: #C8E4E5;
 }
@@ -255,7 +276,9 @@ header{
     padding-right: 15px;
 }
 
-/* form */
+/*****************************
+    form 
+******************************/
 form{
     background-color: #FAFAFA;
     color: #424242;
@@ -301,7 +324,9 @@ form #submit:hover{
     margin: 0;
 } 
 
-/* footer  */
+/*****************************
+    footer 
+******************************/
 footer .contenedor-informacion div h4{
     text-decoration: underline;
     padding-bottom: 1rem;
@@ -336,25 +361,9 @@ footer .contenedor-registro #ver-mas{
     padding-top: 2rem;
 }
 
-
-
-/* #negativo{
-    outline: none;
-    -webkit-appearance: none;
-    background-color: aquamarine;
-}
-#negativo::-webkit-slider-thumb{
-    -webkit-appearance: none;
-    appearance: none;
-    width: 13px;
-    height: 13px;
-    border-radius: 50%;
-    background: magenta;
-} */
-
-
-
-/* animacion */
+/*****************************
+    animacion 
+******************************/
 @keyframes shake {
     0% {
       transform: translateX(50px);
@@ -384,7 +393,11 @@ footer .contenedor-registro #ver-mas{
       transform: translateX(50px);
     }
 }
-/* responsive */
+
+
+/*****************************
+    responsive 
+******************************/
 
 @media screen and (max-width: 1024px){
     iframe{

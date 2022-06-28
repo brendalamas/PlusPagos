@@ -6,6 +6,7 @@
 body{
     background-image: url(http://ticket.pluspagos.com:4703/img/bk.jpg);
     font-family: 'Poppins', sans-serif;
+    position: relative;
 }
 body img{
     width: 100vw;
@@ -50,4 +51,41 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 1.2rem;
     margin-top: 2rem;
     cursor: pointer;
+}
+
+/*****************************
+    modal
+******************************/
+.modal{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 22vw;
+    left: 35vw;
+    padding: 2rem 5rem;
+    background-color: #fafafaef;
+    border-radius: 10px;
+}
+.modal p{
+    line-height: 2rem;
+    font-size: 1.2rem;
+}
+.modal,
+.cerrar-modal{
+    color: #5d5d5d;
+}
+.cerrar-modal{
+    margin-top: 4rem;
+    font-size: .8rem;
+    padding: .5rem;
+    background-color: transparent;
+    border: 1px solid #5d5d5d;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.cerrar-modal:hover{
+    background-color: #5d5d5d;
+    color: #fafafa;
 }
