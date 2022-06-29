@@ -12,9 +12,7 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
-.display-flex{
-    display: flex;
-}
+
 /*****************************
     flexbox
 ******************************/
@@ -96,14 +94,20 @@ header{
     width: 100vw;
     z-index: 100;
 }
-.header-accesos a{
-    margin-left: 1rem;
+.header-logo{
+    width: 20vw;
 }
 .header-accesos{
     width: 50vw;
     font-family: 'Montserrat', sans-serif;
     background-color: transparent;
     border: none;
+}
+.header-accesos a{
+    margin-left: 1rem;
+}
+.header-accesos a:hover{
+    color: #000000;
 }
 .header-accesos a,
 .menu-burger a{
@@ -117,7 +121,11 @@ header{
 #boton-pagar-burger{
     background-color: #005079;
     border-radius: 15px;
-    padding: 0 .5rem;
+    padding: 0.5rem;
+}
+#boton-pagar-burger{
+    padding: 0.2rem 0;
+    text-align: center;
 }
 #boton-header-pagar:hover{
     background-color: #1EBCE2;
@@ -128,8 +136,8 @@ header{
     border: none;
     font-size: 1.2rem;
     justify-content: space-between;
-    display: none;
     cursor: pointer;
+    display: none;
 }
 #boton-pagar-burger{
     margin-top: 0.5rem;
@@ -144,6 +152,9 @@ header{
     border-radius: 10px;
     border: 1px solid #cfcece;
     display: none;
+}
+.display-flex{
+    display: flex;
 }
 
 /*****************************
@@ -465,9 +476,6 @@ footer .contenedor-registro #ver-mas{
 }
 
 @media screen and (max-width: 475px){
-    .header-logo img{
-        width: 25vw;
-    }
     .seccion-carrusel img {
         width: 80vw;
     }
@@ -550,9 +558,6 @@ footer .contenedor-registro #ver-mas{
 
 
 @media screen and (max-width: 320px){
-    /* .seccion-carrusel img {
-        height: 30vw;
-    } */
     iframe{
         width: 200px;
         height: 200px;

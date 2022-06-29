@@ -6,6 +6,7 @@ const botonDescargar = document.querySelector("#boton-descargar");
 
 burger.onclick = () =>{
     menuBurger.classList.toggle('display-flex')
+    console.log("click burger");
 }
 
 botonDescargar.onclick = () =>{
