@@ -13,11 +13,12 @@
         2. crear el archivo php
         
     -->
-    <p> 
-        bienvenidos a la conexion 
-        <?php echo htmlspecialchars($_POST['nombre'])?>
-        <?php echo htmlspecialchars($_POST['apellido'])?>
-    </p>
+    <?php
+
+    $nombre = $_POST['nombre'];
+    $email = $_POST['email'];
+    echo "Gracias por tu comentario ${nombre}, te responderemos a ${email}"
+    ?>
 
 </body>
 </html>
