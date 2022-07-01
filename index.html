@@ -81,13 +81,36 @@
                 de <strong> cargos por servicio. </strong> 
             </h3>
             <button id="boton-descargar">
-                <a href="./facturas/factura-digital.html" target="_blank">
+                <!-- <a href="./facturas/factura-digital.html" target="_blank"> -->
                     Descargar
-                </a>
+                <!-- </a> -->
             </button>
         </div>
     </section>
-
+    <!-- seccion facturas digitales -->
+    <section class="seccion-facturas">
+        <img src="http://ticket.pluspagos.com:4703/img/Hands.jpg" alt="portada">
+        <div class="contenedor-id">
+            <label for="ticket">
+                Ingresá el <strong>ID de transacción </strong> 
+                que figura en el ticket.
+            </label>
+            <input type="number">
+            <button id="buscar">
+                Buscar
+            </button>
+        </div>
+        <div class="modal">
+            <p>¡ERROR!</p>
+            <p>La base de datos aun no fue creada :(</p>
+            <button class="cerrar-modal">
+                cerrar
+            </button>
+        </div>
+        <button class="boton-atras">
+            ATRAS
+        </button>
+    </section>
     <!-- section sucursales -->
     <section class="seccion-sucursales" id="sucursales">
         <h3>¿Donde y qué pago?</h3>
@@ -157,7 +180,7 @@
         <textarea name="comentarios" id="comentarios" cols="25" rows="5"></textarea>
         <input type="submit" value="Enviar" id="submit">
     </form>
-
+    
     <!-- footer -->
     <footer>
         <img src="https://www.pluspagos.com/themes/img/home/plus-footer.png" alt="logo plus pagos">

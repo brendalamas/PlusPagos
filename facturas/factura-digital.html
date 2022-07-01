@@ -11,24 +11,27 @@
 
 </head>
 <body>
-    <img src="http://ticket.pluspagos.com:4703/img/Hands.jpg" alt="portada">
-    <div class="contenedor-id">
-        <label for="ticket">
-            Ingresá el <strong>ID de transacción </strong> 
-            que figura en el ticket.
-        </label>
-        <input type="number">
-        <button id="buscar">
-            Buscar
-        </button>
+    <div class="seccion-facturas">
+        <img src="http://ticket.pluspagos.com:4703/img/Hands.jpg" alt="portada">
+        <div class="contenedor-id">
+            <label for="ticket">
+                Ingresá el <strong>ID de transacción </strong> 
+                que figura en el ticket.
+            </label>
+            <input type="number">
+            <button id="buscar">
+                Buscar
+            </button>
+        </div>
+        <div class="modal">
+            <p>¡ERROR!</p>
+            <p>La base de datos aun no fue creada :(</p>
+            <button class="cerrar-modal">
+                cerrar
+            </button>
+        </div>
     </div>
-    <div class="modal">
-        <p>¡ERROR!</p>
-        <p>La base de datos aun no fue creada :(</p>
-        <button class="cerrar-modal">
-            cerrar
-        </button>
-    </div>
+    
     <script src="./factura-digital.js"></script>
 </body>
 </html>
