@@ -8,13 +8,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.ico" />
     <link rel="icon" href="./plus-pagos.jpeg" sizes="32x32" type="image/png">
-    <script src="https://kit.fontawesome.com/35cd8eb970.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/6e5045a7d1.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- 
-        em 16px 
-        rem segun el padre 
-    -->
     <header>
         <div class="header-logo">
             <img src="https://www.pluspagos.com/themes/img/home/plus-header.png" alt="logo plus pagos">
@@ -23,8 +19,8 @@
             <a href="#sucursales">Sucursales</a>
             <a href="#facturas">Facturas</a>
             <a href="#productos">Productos</a>
-            <a href="#contactanos">Contactanos</a>
-            <a href="#facturas" id="boton-header-pagar" >Paga acá</a>
+            <a href="#contactanos">Adherite</a>
+            <a href="https://pagos.asjservicios.com.ar:8092/" id="boton-header-pagar" >Paga acá</a>
         </div>
         <button class="burger">
             <i class="fas fa-solid fa-bars"></i>
@@ -33,8 +29,8 @@
             <a href="#sucursales">Sucursales</a>
             <a href="#facturas">Facturas</a>
             <a href="#productos">Productos</a>
-            <a href="#contactanos">Contactanos</a>
-            <a href="#facturas" id="boton-pagar-burger" >Paga acá</a>
+            <a href="#contactanos">Adherite</a>
+            <a href="https://pagos.asjservicios.com.ar:8092/" id="boton-pagar-burger" >Paga acá</a>
         </div>
     </header>
 
@@ -68,7 +64,7 @@
         
     </section>
     
-    <!-- section impuestos -->
+    <!-- section descargar facturas -->
     <section class="seccion-impuestos" id="facturas">
         <div class="impuestos-img">
             <img src="https://cdn.bioguia.com/embed/d76fc877355422ce139363b181aa21640802222/mujer-trabajando-ordenador.jpg?imagick=1&size=1250" alt="mujer en computadora">
@@ -80,16 +76,16 @@
             <h3>
                 de <strong> cargos por servicio. </strong> 
             </h3>
-            <button id="boton-descargar">
-                <!-- <a href="./facturas/factura-digital.html" target="_blank"> -->
-                    Descargar
-                <!-- </a> -->
-            </button>
+            <button id="boton-descargar"> Descargar </button>
         </div>
     </section>
+
     <!-- seccion facturas digitales -->
     <section class="seccion-facturas">
         <img src="http://ticket.pluspagos.com:4703/img/Hands.jpg" alt="portada">
+        <button class="boton-atras">
+            <i class="fa-solid fa-arrow-left"></i>
+        </button>
         <div class="contenedor-id">
             <label for="ticket">
                 Ingresá el <strong>ID de transacción </strong> 
@@ -101,41 +97,49 @@
             </button>
         </div>
         <div class="modal">
-            <p>¡ERROR!</p>
-            <p>La base de datos aun no fue creada :(</p>
-            <button class="cerrar-modal">
-                cerrar
+            <button class="cerrar-modal" aria-label="home">
+                <i class="fa-solid fa-xmark" aria-describedby="volver"></i>
             </button>
+            <div class="msj-error">
+                <p>¡ERROR!</p>
+                <p>La base de datos aun no fue creada :(</p>
+            </div>
         </div>
-        <button class="boton-atras">
-            ATRAS
-        </button>
+        
     </section>
     <!-- section sucursales -->
     <section class="seccion-sucursales" id="sucursales">
-        <h3>¿Donde y qué pago?</h3>
-        <p>
-            Encontrá la sucursal más cercana
-            para pagar, retirar y depositar tu plata.
-        </p>
-        <div class="sucursales">
-            <select name="provincias">
-                <option value="" selected>PROVINCIAS</option>
-                <option value="buenos aires">BUENOS AIRES</option>
-                <option value="chaco">CHACO</option>
-                <option value="corrientes">CORRIENTES</option>
-                <option value="entre rios">ENTRE RIOS</option>
-                <option value="mendoza">MENDOZA</option>
-            </select>
-            <select name="localidades">
-                <option value="" selected>LOCALIDADES</option>
-                <option value="25deMayo">25 DE MAYO</option>
-                <option value="9deJulio">9 DE JULIO</option>
-                <option value="alcorta">ALCORTA</option>
-                <option value="alvarez">ALVAREZ</option>
-                <option value="concordia">CONCORDIA</option>
-            </select>
+        <div class="sucursales-img">
+            <img src="https://www.pluspagos.com/themes/img/home/man.jpg" alt="hombre buscando en el celular">
         </div>
+        <div class="sucursales-buscador">
+            <div class="sucursales-texto">
+                <h3>¿Donde y qué pago?</h3>
+                <p>
+                    Encontrá la sucursal más cercana
+                    para pagar, retirar y depositar tu plata.
+                </p>
+            </div>
+            <div class="sucursales">
+                <select name="provincias">
+                    <option value="" selected>PROVINCIAS</option>
+                    <option value="buenos aires">BUENOS AIRES</option>
+                    <option value="chaco">CHACO</option>
+                    <option value="corrientes">CORRIENTES</option>
+                    <option value="entre rios">ENTRE RIOS</option>
+                    <option value="mendoza">MENDOZA</option>
+                </select>
+                <select name="localidades">
+                    <option value="" selected>LOCALIDADES</option>
+                    <option value="25deMayo">25 DE MAYO</option>
+                    <option value="9deJulio">9 DE JULIO</option>
+                    <option value="alcorta">ALCORTA</option>
+                    <option value="alvarez">ALVAREZ</option>
+                    <option value="concordia">CONCORDIA</option>
+                </select>
+            </div>
+        </div>
+        
     </section>
 
     <!-- section productos -->
@@ -158,7 +162,7 @@
         
     </section>
 
-    <!-- formulario -->
+    <!-- Billetera virtual FORM -->
     <!-- 
         http://localhost/form/procesar.php 
         levantarlo siempre desde el localhost
@@ -166,18 +170,17 @@
         si actualizo algo tengo q copiar y pegar devuelta
     -->
     <form id="contactanos" action="procesar.php" method="post" >
-        <h3>¡Dejanos tu comentario!</h3>
+        <h3>¡Adherite a nuestra billetera virtual!</h3>
+        <p>Dejanos tu email y nos vamos a estar contacto con vos.</p>
         <label for="nombre">Nombre*</label>
         <input type="text" name="nombre" id="nombre" required>
-        
         <label for="apellido">Apellido*</label>
         <input type="text" name="apellido" id="apellido" required>
-        
+        <label for="number">Telefono*</label>
+        <input type="number" name="number" required>
         <label for="email">Email*</label>
         <input type="email" name="email" required>
 
-        <label for="comentarios">Comentarios</label>
-        <textarea name="comentarios" id="comentarios" cols="25" rows="5"></textarea>
         <input type="submit" value="Enviar" id="submit">
     </form>
     

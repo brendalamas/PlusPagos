@@ -26,6 +26,10 @@ header,
     flex-direction: row;
     justify-content: space-between;
 }
+.seccion-sucursales{
+    display: flex;
+    flex-direction: row;
+}
 .header-accesos,
 .seccion-box,
 .seccion-carrusel, 
@@ -35,8 +39,10 @@ header,
     justify-content: center;
     align-items: center;
 }
-.seccion-sucursales, 
-.sucursales, 
+
+.sucursales-buscador,
+.sucursales-texto,
+.sucursales,
 .seccion-productos,
 form, 
 footer,
@@ -46,6 +52,7 @@ footer .contenedor-registro{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 /*****************************
@@ -73,7 +80,6 @@ footer{
 /*****************************
     padding / margin 
 ******************************/
-.seccion-sucursales, 
 .seccion-box,
 .seccion-impuestos,
 .seccion-productos,
@@ -236,18 +242,33 @@ header{
     background-image: url(http://ticket.pluspagos.com:4703/img/bk.jpg);
     font-family: 'Poppins', sans-serif;
     flex-direction: column;
+    height: 100vh;
     position: relative;
     display: none;
 }
 .seccion-facturas img{
     width: 100vw;
 }
+.seccion-facturas .boton-atras{
+    background-color: transparent;
+    border: none;
+    margin: 1rem 0 0 1.5rem;
+    text-align: start;
+    cursor: pointer;
+}
+.seccion-facturas .boton-atras i{
+    color: #fafafa;
+    font-size: 2rem;
+}
+.seccion-facturas .boton-atras i:hover{
+   color: #5d5d5d;
+}
 .seccion-facturas .contenedor-id{
     display: flex;
     flex-direction: column;
     align-items: center;
     color: #FAFAFA;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 .contenedor-id label{
     font-size: 1.8rem;
@@ -273,28 +294,30 @@ header{
   -webkit-appearance: none; 
   margin: 0; 
 }
-.seccion-facturas .contenedor-id button{
+#buscar{
     background-color: #00BED6;
     color: #FAFAFA;
-    padding: 0.5rem 2rem;
     border: none;
     border-radius: 10px;
     font-size: 1.2rem;
     margin-top: 2rem;
-    cursor: pointer;
+    padding: 0.5rem 2rem;
+    cursor: pointer; 
+}
+#buscar:hover{
+    background-color: #fafafa;
+    color: #00BED6;
 }
 
-/*****************************
-    modal
-******************************/
+/*modal*/
 .seccion-facturas .modal{
     display: none;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     position: absolute;
-    top: 22vw;
-    left: 35vw;
-    padding: 2rem 5rem;
+    top: 10vw;
+    left: 36vw;
+    padding: 2rem;
     background-color: #fafafaef;
     border-radius: 10px;
 }
@@ -307,18 +330,20 @@ header{
     color: #5d5d5d;
 }
 .cerrar-modal{
-    margin-top: 4rem;
-    font-size: .8rem;
-    padding: .5rem;
     background-color: transparent;
-    border: 1px solid #5d5d5d;
-    border-radius: 10px;
     cursor: pointer;
+    border: none;
+    margin-top: .5rem;
+    font-size: 1.5rem;
 }
 
 .cerrar-modal:hover{
     background-color: #5d5d5d;
     color: #fafafa;
+}
+.msj-error{
+    padding-top: 1rem;
+    text-align: center;
 }
 
 /*****************************
@@ -326,6 +351,16 @@ header{
 ******************************/
 .seccion-sucursales{
     text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.seccion-sucursales .sucursales-img{
+    width: 50vw;
+    height: 75vh;
+}
+.seccion-sucursales .sucursales-img img{
+    width: 100%;
+    height: 100%;
 }
 .seccion-sucursales h3{
     font-size: 3rem;
@@ -349,7 +384,9 @@ header{
 select:focus{
     outline: none;
 }
-
+.sucursales-buscador{
+    padding-left: .5rem;
+}
 /*****************************
     seccion-productos  
 ******************************/
@@ -377,7 +414,7 @@ select:focus{
 }
 
 /*****************************
-    form 
+    Billetera virtual FORM
 ******************************/
 form{
     background-color: #FAFAFA;
@@ -385,6 +422,9 @@ form{
 }
 form h3{
     font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+form p{
     margin-bottom: 1.5rem;
 }
 form label{

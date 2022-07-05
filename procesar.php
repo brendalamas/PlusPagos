@@ -14,11 +14,10 @@
         
     -->
     <?php
-
     $nombre = $_POST['nombre'];
+    $apellido = $_POST['apellido'];
     $email = $_POST['email'];
-    echo "Gracias por tu comentario ${nombre}, te responderemos a ${email}"
-    ?>
+    echo "Gracias por tu comentario ${nombre} ${apellido}, nos pondremos en contacto via ${email}"?>
 
 </body>
 </html>

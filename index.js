@@ -38,6 +38,7 @@ botonDescargar.onclick=()=>{
     seccionFacturas.style.display = "flex"
     console.log("click en descargar");
 }
+
 // seccion facturas modal
 botonBuscar.onclick = () =>{
     modal.style.display="flex"
