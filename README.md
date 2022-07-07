@@ -7,6 +7,8 @@
 
 > <img style="width:5%" src="https://cdn-icons-png.flaticon.com/512/5968/5968267.png"/>
 > <img style="width:5%" src="https://cdn-icons-png.flaticon.com/512/732/732190.png"/>
+> <img style="width:5%" src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png"/>
+> <img style="width:5%" src="https://cdn-icons-png.flaticon.com/512/38/38401.png"/>
 
 <br>
 
