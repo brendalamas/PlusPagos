@@ -40,6 +40,8 @@ header,
     align-items: center;
 }
 
+.seccion-ingresar,
+.ingresar-datos,
 .sucursales-buscador,
 .sucursales-texto,
 .sucursales,
@@ -63,8 +65,8 @@ footer .contenedor-registro{
     color: #000000;
 }
 
-#boton-header-pagar,
-#boton-pagar-burger,
+#boton-ingresar,
+#boton-ingresar-burger,
 .seccion-sucursales,
 .sucursales select,
 footer{
@@ -80,6 +82,7 @@ footer{
 /*****************************
     padding / margin 
 ******************************/
+.seccion-ingresar,
 .seccion-box,
 .seccion-impuestos,
 .seccion-productos,
@@ -123,17 +126,17 @@ header{
     color: #5d5d5d;
 }
 
-#boton-header-pagar,
-#boton-pagar-burger{
+#boton-ingresar,
+#boton-ingresar-burger{
     background-color: #005079;
     border-radius: 15px;
     padding: 0.5rem;
 }
-#boton-pagar-burger{
+#boton-ingresar-burger{
     padding: 0.2rem 0;
     text-align: center;
 }
-#boton-header-pagar:hover{
+#boton-ingresar:hover{
     background-color: #1EBCE2;
 }
 .burger{
@@ -145,7 +148,7 @@ header{
     cursor: pointer;
     display: none;
 }
-#boton-pagar-burger{
+#boton-ingresar-burger{
     margin-top: 0.5rem;
 }
 .menu-burger{
@@ -196,6 +199,45 @@ header{
     cursor: pointer;
     filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7)); 
 }
+/*****************************
+    seccion cuenta 
+******************************/
+
+.seccion-ingresar{
+    background-color: #ffffff;
+    color: #424242;
+}
+.seccion-ingresar h2{
+    font-size: 2rem;
+}
+.ingresar-datos{
+    padding-top: 1.8rem;
+}
+.ingresar-datos label{
+    font-size: 1.3rem;
+    padding-top: 1rem;
+}
+.ingresar-datos input{
+    border-radius: 10px;
+    width: 20rem;
+    height: 3rem;
+    padding: 1rem;    
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    border-color: #C8E4E5; 
+}
+.ingresar-datos button{
+    margin-top: 2.5rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    background-color: #C8E4E5;
+    border: none;
+    color: #424242;
+    cursor: pointer;
+}
+
+
 
 /*****************************
     seccion-impuestos
@@ -290,7 +332,9 @@ header{
 }
 
 .seccion-facturas input[type=number]::-webkit-inner-spin-button, 
-.seccion-facturas input[type=number]::-webkit-outer-spin-button { 
+.seccion-facturas input[type=number]::-webkit-outer-spin-button,
+#contactanos input[type=number]::-webkit-inner-spin-button, 
+#contactanos input[type=number]::-webkit-outer-spin-button  { 
   -webkit-appearance: none; 
   margin: 0; 
 }
@@ -362,10 +406,10 @@ header{
     width: 100%;
     height: 100%;
 }
-.seccion-sucursales h3{
+.sucursales-texto h3{
     font-size: 3rem;
 }
-.seccion-sucursales p{
+.sucursales-texto p{
     font-size: 1.5rem;
     padding-top: 1.2rem;
     width: 35vw;
@@ -380,13 +424,20 @@ header{
     background-color: transparent;
     border-color: #FAFAFA;
     margin: 1.5rem 0 .5rem 0;
+    width: 10rem;
 }
 select:focus{
     outline: none;
 }
-.sucursales-buscador{
-    padding-left: .5rem;
+#select-texto{
+    margin-top: 2.5rem;
 }
+#select-texto ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+
 /*****************************
     seccion-productos  
 ******************************/
@@ -500,6 +551,7 @@ footer .contenedor-registro{
 footer .contenedor-registro #ver-mas{
     padding-top: 2rem;
 }
+
 
 /*****************************
     animacion 

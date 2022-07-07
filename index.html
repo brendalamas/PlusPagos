@@ -20,7 +20,7 @@
             <a href="#facturas">Facturas</a>
             <a href="#productos">Productos</a>
             <a href="#contactanos">Adherite</a>
-            <a href="https://pagos.asjservicios.com.ar:8092/" id="boton-header-pagar" >Paga acá</a>
+            <a href="#ingresar" id="boton-ingresar">Ingresar</a>
         </div>
         <button class="burger">
             <i class="fas fa-solid fa-bars"></i>
@@ -30,7 +30,7 @@
             <a href="#facturas">Facturas</a>
             <a href="#productos">Productos</a>
             <a href="#contactanos">Adherite</a>
-            <a href="https://pagos.asjservicios.com.ar:8092/" id="boton-pagar-burger" >Paga acá</a>
+            <a href="#ingresar" id="boton-ingresar-burger">Ingresa</a>
         </div>
     </header>
 
@@ -38,6 +38,7 @@
     <section class="seccion-carrusel">
         <img src="./img/carrusel.png" alt="">
     </section>
+
     <!-- section box -->
     <section class="seccion-box">
         <div class="contenedor-box">
@@ -64,6 +65,18 @@
         
     </section>
     
+    <!-- seccion cuenta -->
+    <section class="seccion-ingresar" id="ingresar">
+        <h2>¡Ingresa a tu cuenta!</h2>
+        <div class="ingresar-datos">
+            <label for="usuario">Usuario</label>
+            <input type="text">
+            <label for="clave">Clave</label>
+            <input type="password">
+            <button class="ingresar">Ingresar</button>
+        </div>
+    </section>
+    
     <!-- section descargar facturas -->
     <section class="seccion-impuestos" id="facturas">
         <div class="impuestos-img">
@@ -84,7 +97,7 @@
     <section class="seccion-facturas">
         <img src="http://ticket.pluspagos.com:4703/img/Hands.jpg" alt="portada">
         <button class="boton-atras">
-            <i class="fa-solid fa-arrow-left"></i>
+            <i class="fa-solid fa-circle-arrow-left"></i>        
         </button>
         <div class="contenedor-id">
             <label for="ticket">
@@ -121,22 +134,18 @@
                 </p>
             </div>
             <div class="sucursales">
-                <select name="provincias">
-                    <option value="" selected>PROVINCIAS</option>
-                    <option value="buenos aires">BUENOS AIRES</option>
-                    <option value="chaco">CHACO</option>
-                    <option value="corrientes">CORRIENTES</option>
-                    <option value="entre rios">ENTRE RIOS</option>
-                    <option value="mendoza">MENDOZA</option>
+                <select class="select-provincias">
+                    <option value="" >PROVINCIAS</option>
+                    <option value="Buenos Aires">BUENOS AIRES</option>
+                    <option value="Mendoza">MENDOZA</option>
+                    <option value="Chaco">CHACO</option>
+                    <option value="Corrientes">CORRIENTES</option>
+
                 </select>
-                <select name="localidades">
-                    <option value="" selected>LOCALIDADES</option>
-                    <option value="25deMayo">25 DE MAYO</option>
-                    <option value="9deJulio">9 DE JULIO</option>
-                    <option value="alcorta">ALCORTA</option>
-                    <option value="alvarez">ALVAREZ</option>
-                    <option value="concordia">CONCORDIA</option>
+                <select class="select-localidades">
+                    <option value="">LOCALIDADES</option>
                 </select>
+                <div id="select-texto"></div>
             </div>
         </div>
         
@@ -171,19 +180,20 @@
     -->
     <form id="contactanos" action="procesar.php" method="post" >
         <h3>¡Adherite a nuestra billetera virtual!</h3>
-        <p>Dejanos tu email y nos vamos a estar contacto con vos.</p>
+        <p>Dejanos tus datos y nos vamos a estar contactando con vos</p>
         <label for="nombre">Nombre*</label>
         <input type="text" name="nombre" id="nombre" required>
         <label for="apellido">Apellido*</label>
         <input type="text" name="apellido" id="apellido" required>
-        <label for="number">Telefono*</label>
-        <input type="number" name="number" required>
+        <label for="number">Telefono</label>
+        <input type="number" name="number" id="phone">
+
         <label for="email">Email*</label>
         <input type="email" name="email" required>
 
         <input type="submit" value="Enviar" id="submit">
     </form>
-    
+
     <!-- footer -->
     <footer>
         <img src="https://www.pluspagos.com/themes/img/home/plus-footer.png" alt="logo plus pagos">

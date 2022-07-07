@@ -17,7 +17,8 @@
     $nombre = $_POST['nombre'];
     $apellido = $_POST['apellido'];
     $email = $_POST['email'];
-    echo "Gracias por tu comentario ${nombre} ${apellido}, nos pondremos en contacto via ${email}"?>
+    echo "¡Gracias por tu solicitud a nuestra billetera virtual, ${nombre} ${apellido}! 
+    <br> Nos pondremos en contacto via ${email}"?>
 
 </body>
 </html>
