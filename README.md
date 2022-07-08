@@ -1,7 +1,7 @@
 
-# 👩🏻‍💻 EN PROCESO - PROYECTO FINAL DEL BOOTCAMP ASJ 
-
+# 👩🏻‍💻 EN PROCESO
 <br>
+Proyecto realizado para el bootcamp de ASJ
 
 ## 💻 Tecnologias utilizadas _(al momento)_
 
