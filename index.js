@@ -20,6 +20,9 @@ const cerrarModal = document.querySelector(".cerrar-modal")
 const botonAtras = document.querySelector(".boton-atras")
 const botonSalirSeccionPagar = document.querySelector(".boton-salir-seccion-pagar")
 
+const botonIngresar = document.querySelector(".ingresar");
+
+
 burger.onclick = () =>{
     menuBurger.classList.toggle('display-flex')
     console.log("click burger");
@@ -139,3 +142,57 @@ selectProvincias.onchange =()=> {
 }
 
 
+// ingresar a un cuenta
+const inputUsuario = document.querySelector("#usuario")
+const inputClave = document.querySelector("#clave")
+
+const cuentas = [
+    {
+        usuario : "admin1",
+        clave : 123456789
+    },
+    {
+        usuario : "admin2",
+        clave : 52689653},
+    {
+        usuario : "admin3",
+        clave : 15248269},
+    {
+        usuario : "admin4",
+        clave : 14145858},
+    {
+        usuario : "admin5",
+        clave : 98745632},
+    {
+        usuario : "admin6",
+        clave : 45698562},
+    {
+        usuario : "admin7",
+        clave : 25635636},
+    {
+        usuario : "admin8",
+        clave : 78989636},
+    {
+        usuario : "admin9",
+        clave : 12542524},
+    {
+        usuario : "admin0",
+        clave : 45458577
+    }
+]
+
+botonIngresar.onclick = () => {
+    console.log("boton ingresar");
+    for (let i = 0; i < cuentas.length; i++) {
+        console.log(inputUsuario.value);
+        console.log(cuentas.usuario); 
+        console.log(inputClave.value);
+        console.log(cuentas.clave); 
+
+        // console.log(inputUsuario.value == cuentas.usuario)
+        // console.log(inputClave.value == cuentas.clave);
+        
+        // const resultado = cuentas.filter(cuenta => inputUsuario.value == cuenta[i].usuario && inputClave.value == cuenta[i].clave);
+        // console.log(resultado);
+    }
+}

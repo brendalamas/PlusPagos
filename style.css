@@ -224,20 +224,24 @@ header{
     padding: 1rem;    
     margin-top: 1rem;
     font-size: 1.5rem;
-    border-color: #C8E4E5; 
+    outline: none;
+    border: 1px solid #424242;
 }
-.ingresar-datos button{
+.ingresar{
     margin-top: 2.5rem;
     padding: 1rem;
     font-size: 1.2rem;
     border-radius: 10px;
     background-color: #C8E4E5;
     border: none;
-    color: #424242;
     cursor: pointer;
+    color: #ffffff;
 }
+.ingresar:hover{
+    color: #C8E4E5;
+    background-color: #ffffff;
 
-
+}
 
 /*****************************
     seccion-impuestos
