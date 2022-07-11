@@ -12,9 +12,9 @@
 </head>
 <body>
     <header>
-        <div class="header-logo">
+        <a href="index.html" class="header-logo">
             <img src="https://www.pluspagos.com/themes/img/home/plus-header.png" alt="logo plus pagos">
-        </div>
+        </a>
         <div class="header-accesos">
             <a href="#sucursales">Sucursales</a>
             <a href="#facturas">Facturas</a>
@@ -43,24 +43,43 @@
     <section class="seccion-box">
         <div class="contenedor-box">
             <div class="primer-columna">
-                <div class="contenedor-box-img">
-                    <img src="https://www.pluspagos.com/themes/img/home/frente-plus-pagos.jpg" alt="">
-                </div>
-                <div class="contenedor-box-img">
-                    <img src="https://www.pluspagos.com/themes/img/home/7XWOHB6S5NA5NOEYDQFUAQTF5U.jfif" alt="">
+                <div class="contenedor-hover">
+                    <a href="https://www.pluspagos.com/agentes" class="contenedor-box-img">
+                        <img src="https://www.pluspagos.com/themes/img/home/frente-plus-pagos.jpg" alt="">
+                        <div  class="capa">
+                            <h4>¡Sumate como agente de Plus Pagos!</h4>
+                        </div>
+                    </a>
+                    <a href="https://www.pluspagos.com/empresa" class="contenedor-box-img">
+                            <img src="https://www.pluspagos.com/themes/img/home/7XWOHB6S5NA5NOEYDQFUAQTF5U.jfif" alt="">
+                            <div  class="capa">
+                                <h4>¡Sumá tu empresa a nuestra red de cobranza</h4>
+                            </div>
+                    </a>
                 </div>
             </div>
            <div class="segunda-columna">
-                <div class="contenedor-box-img">
-                    <img src="https://www.pluspagos.com/themes/img/home/boton-web.jpg" alt="">
-                </div>
-                <div class="contenedor-box-img">
-                    <img src="https://www.pluspagos.com/themes/img/home/chica.jpg" alt="">
-                </div>
-                <div class="contenedor-box-img">
-                    <img src="https://www.pluspagos.com/themes/img/home/persons.jpg" alt="">
-                </div>
-           </div>
+                <div class="contenedor-hover">
+                    <a href="https://www.pluspagos.com/pago-web" class="contenedor-box-img">
+                            <img src="https://www.pluspagos.com/themes/img/home/boton-web.jpg" alt="">
+                            <div  class="capa">
+                                <h4>¡Solicita tu botón de pago web!</h4>
+                            </div>
+                        </a>
+                        <a href="https://www.santafe.gob.ar/ms/billeterasantafe/" class="contenedor-box-img">
+                                <img src="https://www.pluspagos.com/themes/img/home/chica.jpg" alt="">
+                                <div  class="capa">
+                                    <h4>Unite como comercio en un click</h4>
+                                </div>
+                        </a>
+                        <a href="https://www.pluspagos.com/recursos-humanos" class="contenedor-box-img">
+                                <img src="https://www.pluspagos.com/themes/img/home/persons.jpg" alt="">
+                                <div  class="capa">
+                                    <h4>¡Sé parte de Plus Pagos!</h4>
+                                </div>
+                        </a>
+                    </div>
+            </div>
         </div>
         
     </section>
@@ -75,6 +94,7 @@
             <input type="password" id="clave">
         </div>
         <button class="ingresar">Ingresar</button>
+        <p id="anuncio"></p>
     </section>
     
     <!-- section descargar facturas -->
@@ -114,8 +134,8 @@
                 <i class="fa-solid fa-xmark" aria-describedby="volver"></i>
             </button>
             <div class="msj-error">
-                <p>¡ERROR!</p>
-                <p>La base de datos aun no fue creada :(</p>
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <p>La base de datos aun no fue conectada</p>
             </div>
         </div>
         

@@ -153,28 +153,36 @@ const cuentas = [
     },
     {
         usuario : "admin2",
-        clave : 52689653},
+        clave : 52689653
+    },
     {
         usuario : "admin3",
-        clave : 15248269},
+        clave : 15248269
+    },
     {
         usuario : "admin4",
-        clave : 14145858},
+        clave : 14145858
+    },
     {
         usuario : "admin5",
-        clave : 98745632},
+        clave : 98745632
+    },
     {
         usuario : "admin6",
-        clave : 45698562},
+        clave : 45698562
+    },
     {
         usuario : "admin7",
-        clave : 25635636},
+        clave : 25635636
+    },
     {
         usuario : "admin8",
-        clave : 78989636},
+        clave : 78989636
+    },
     {
         usuario : "admin9",
-        clave : 12542524},
+        clave : 12542524
+    },
     {
         usuario : "admin0",
         clave : 45458577
@@ -182,17 +190,29 @@ const cuentas = [
 ]
 
 botonIngresar.onclick = () => {
-    console.log("boton ingresar");
-    for (let i = 0; i < cuentas.length; i++) {
-        console.log(inputUsuario.value);
-        console.log(cuentas.usuario); 
-        console.log(inputClave.value);
-        console.log(cuentas.clave); 
+    const anuncio = document.getElementById("anuncio");
+    let contadorIngreso=0;
 
-        // console.log(inputUsuario.value == cuentas.usuario)
-        // console.log(inputClave.value == cuentas.clave);
-        
-        // const resultado = cuentas.filter(cuenta => inputUsuario.value == cuenta[i].usuario && inputClave.value == cuenta[i].clave);
-        // console.log(resultado);
+    for (let i = 0; i < cuentas.length; i++) {
+        console.log("datos ingresados: "+ inputUsuario.value, inputClave.value);
+        console.log("datos for: " + cuentas[i].usuario, cuentas[i].clave); 
+
+
+        if(inputUsuario.value == cuentas[i].usuario && inputClave.value == cuentas[i].clave){
+            const ingreso = "ingreso!";
+            console.log(ingreso)
+            contadorIngreso++;
+            console.log(contadorIngreso);
+        }else{
+            const noIngreso = "no ingreso";
+            console.log(noIngreso);
+        }
+
+
+    }
+    if(contadorIngreso>=1){
+        anuncio.innerText="Ingreso exitoso!"
+    }else if(contadorIngreso<=0){
+        anuncio.innerText="Usuario y/o Clave incorrectos. Vuelve a intentar"
     }
 }
