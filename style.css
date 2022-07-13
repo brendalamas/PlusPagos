@@ -41,8 +41,10 @@ header,
     align-items: center;
 }
 
-.seccion-ingresar,
+.seccion-cuenta,
+.ingresar-cuenta,
 .ingresar-datos,
+.cuenta-ingresada,
 .sucursales-buscador,
 .sucursales-texto,
 .sucursales,
@@ -83,7 +85,7 @@ footer{
 /*****************************
     padding / margin 
 ******************************/
-.seccion-ingresar,
+.seccion-cuenta,
 .seccion-box,
 .seccion-impuestos,
 .seccion-productos,
@@ -243,11 +245,11 @@ header{
     seccion cuenta 
 ******************************/
 
-.seccion-ingresar{
+.seccion-cuenta{
     background-color: #ffffff;
     color: #424242;
 }
-.seccion-ingresar h2{
+.seccion-cuenta h2, .cuenta-ingresada h2{
     font-size: 2rem;
 }
 .ingresar-datos{
@@ -267,7 +269,7 @@ header{
     outline: none;
     border: 1px solid #424242;
 }
-.ingresar{
+.ingresar, .boton-salir-cuenta{
     margin-top: 2.5rem;
     padding: 1rem;
     font-size: 1.2rem;
@@ -277,13 +279,14 @@ header{
     cursor: pointer;
     color: #ffffff;
 }
-.ingresar:hover{
+.ingresar:hover, .boton-salir-cuenta:hover{
     color: #C8E4E5;
     background-color: #ffffff;
-
+    border: 1px solid #C8E4E5;
 }
-#anuncio{
-    margin-top: 1.5rem;
+.cuenta-ingresada p{
+    font-size: 1.5rem;
+    line-height: 3.5rem;
 }
 /*****************************
     seccion-impuestos
@@ -415,21 +418,26 @@ header{
     line-height: 2rem;
     font-size: 1.2rem;
 }
+.modal i{
+    font-size: 2rem;
+}
+.modal .alert{
+    padding-bottom: 2rem;
+}
 .seccion-facturas .modal,
 .cerrar-modal{
     color: #5d5d5d;
 }
 .cerrar-modal{
-    background-color: transparent;
     cursor: pointer;
     border: none;
     margin-top: .5rem;
     font-size: 1.5rem;
 }
 
-.cerrar-modal:hover{
-    background-color: #5d5d5d;
-    color: #fafafa;
+.cerrar-modal>i:hover{
+    background-color: transparent;
+    color: #111111;
 }
 .msj-error{
     padding-top: 1rem;

@@ -145,6 +145,11 @@ selectProvincias.onchange =()=> {
 // ingresar a un cuenta
 const inputUsuario = document.querySelector("#usuario")
 const inputClave = document.querySelector("#clave")
+const ingresarCuenta = document.querySelector(".ingresar-cuenta")
+const panelIngreso = document.querySelector(".panel-ingreso")
+const cuentaIngresada = document.querySelector(".cuenta-ingresada")
+const anuncio = document.getElementById("anuncio");
+
 
 const cuentas = [
     {
@@ -189,30 +194,38 @@ const cuentas = [
     }
 ]
 
+let contadorIngreso=0;
+
 botonIngresar.onclick = () => {
-    const anuncio = document.getElementById("anuncio");
-    let contadorIngreso=0;
 
     for (let i = 0; i < cuentas.length; i++) {
-        console.log("datos ingresados: "+ inputUsuario.value, inputClave.value);
-        console.log("datos for: " + cuentas[i].usuario, cuentas[i].clave); 
+        if(inputUsuario.value == cuentas[i].usuario && inputClave.value == cuentas[i].clave) contadorIngreso++;
+    }
+    
+    // si el usuario es correcto, ingrese a los datos
+    if (contadorIngreso>=1) { 
+        cuentaIngresada.innerHTML=`
+            <h2>Bienvenido, ${inputUsuario.value}!</h2>
+            <p>Saldo disponible</p>
+            <p>$50.565,05</p>
+            <button class="boton-salir-cuenta"> SALIR </button>
+        `
+        ingresarCuenta.style.display="none"
+        anuncio.style.display="none"
 
+        // click salir y para volver a seccion cuentas
+        const botonSalirCuenta = document.querySelector(".boton-salir-cuenta");
 
-        if(inputUsuario.value == cuentas[i].usuario && inputClave.value == cuentas[i].clave){
-            const ingreso = "ingreso!";
-            console.log(ingreso)
-            contadorIngreso++;
-            console.log(contadorIngreso);
-        }else{
-            const noIngreso = "no ingreso";
-            console.log(noIngreso);
+        botonSalirCuenta.onclick = () =>{
+            ingresarCuenta.style.display="flex";
+            cuentaIngresada.style.display="none";
+            inputUsuario.value = "";
+            inputClave.value="";
+            anuncio.style.display="flex"
+
         }
-
-
-    }
-    if(contadorIngreso>=1){
-        anuncio.innerText="Ingreso exitoso!"
-    }else if(contadorIngreso<=0){
-        anuncio.innerText="Usuario y/o Clave incorrectos. Vuelve a intentar"
-    }
+    }else{anuncio.innerText="Usuario y/o Clave incorrectos. Vuelve a intentar"}
 }
+
+
+    

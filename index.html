@@ -84,18 +84,24 @@
         
     </section>
     
-    <!-- seccion cuenta -->
-    <section class="seccion-ingresar" id="ingresar">
-        <h2>¡Ingresa a tu cuenta!</h2>
-        <div class="ingresar-datos">
-            <label for="usuario">Usuario</label>
-            <input type="text" id="usuario">
-            <label for="clave">Clave</label>
-            <input type="password" id="clave">
+    <!-- seccion cuenta a ingresar -->
+    <section class="seccion-cuenta" id="ingresar">
+        <h2 id="anuncio">¡Ingresa a tu cuenta!</h2>
+        <!-- cuenta a ingresar -->
+        <div class="ingresar-cuenta">
+            <div class="ingresar-datos">
+                <label for="usuario" >Usuario</label>
+                <input type="text" id="usuario">
+                <label for="clave">Clave</label>
+                <input type="password" id="clave">
+            </div>
+            <button class="ingresar">Ingresar</button>
         </div>
-        <button class="ingresar">Ingresar</button>
-        <p id="anuncio"></p>
+        <!-- cuenta ingresada -->
+        <div class="cuenta-ingresada"></div>    
     </section>
+
+    
     
     <!-- section descargar facturas -->
     <section class="seccion-impuestos" id="facturas">
@@ -131,10 +137,10 @@
         </div>
         <div class="modal">
             <button class="cerrar-modal" aria-label="home">
-                <i class="fa-solid fa-xmark" aria-describedby="volver"></i>
+                <i class="fa-solid fa-xmark"></i>
             </button>
             <div class="msj-error">
-                <i class="fa-solid fa-triangle-exclamation"></i>
+                <i class="fa-solid fa-triangle-exclamation alert"></i>
                 <p>La base de datos aun no fue conectada</p>
             </div>
         </div>
