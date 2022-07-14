@@ -150,82 +150,102 @@ const panelIngreso = document.querySelector(".panel-ingreso")
 const cuentaIngresada = document.querySelector(".cuenta-ingresada")
 const anuncio = document.getElementById("anuncio");
 
-
+// array de obj, de cuentas que pueden ingresar
 const cuentas = [
     {
         usuario : "admin1",
-        clave : 123456789
+        clave : 123456789,
+        monto :50266
     },
     {
         usuario : "admin2",
-        clave : 52689653
+        clave : 52689653,
+        monto :47389
     },
     {
         usuario : "admin3",
-        clave : 15248269
+        clave : 15248269,
+        monto :74742
     },
     {
         usuario : "admin4",
-        clave : 14145858
+        clave : 14145858,
+        monto :77777
     },
     {
         usuario : "admin5",
-        clave : 98745632
+        clave : 98745632,
+        monto :6255
     },
     {
         usuario : "admin6",
-        clave : 45698562
+        clave : 45698562,
+        monto :1544
     },
     {
         usuario : "admin7",
-        clave : 25635636
+        clave : 25635636,
+        monto :502664
     },
     {
         usuario : "admin8",
-        clave : 78989636
+        clave : 78989636,
+        monto :50264
     },
     {
         usuario : "admin9",
-        clave : 12542524
+        clave : 12542524,
+        monto :502
     },
     {
         usuario : "admin0",
-        clave : 45458577
+        clave : 45458577,
+        monto :50267
     }
 ]
 
-let contadorIngreso=0;
+let contadorIngreso=false;
 
 botonIngresar.onclick = () => {
+    console.log("click en boton ingresar a cta");
 
     for (let i = 0; i < cuentas.length; i++) {
-        if(inputUsuario.value == cuentas[i].usuario && inputClave.value == cuentas[i].clave) contadorIngreso++;
+        console.log(inputUsuario.value);
+        console.log(inputClave.value);
+
+        if(cuentas[i].usuario == inputUsuario.value && cuentas[i].clave == inputClave.value) {
+            // contadorIngreso = true;
+            // si el usuario es correcto, ingrese a los datos
+            cuentaIngresada.innerHTML=`
+                <h2>Bienvenido, ${inputUsuario.value} !</h2>
+                <p>Saldo disponible</p>
+                <p>$ ${cuentas[i].monto}</p>
+                <button class="boton-salir-cuenta"> SALIR </button>
+            `
+            ingresarCuenta.style.display="none"
+            anuncio.style.display="none"
+            // click salir y para volver a seccion cuentas
+            const botonSalirCuenta = document.querySelector(".boton-salir-cuenta");
+
+            botonSalirCuenta.onclick = () =>{
+                console.log("click en salir de cta");
+                // ingresarCuenta.style.display="flex";
+                // cuentaIngresada.style.display="none";
+                // inputUsuario.value="";
+                // inputClave.value="";
+                // anuncio.style.display="flex"
+                window.location.reload()
+
+
+            }  
+        }else{
+            console.log("hay algo incorrecto");
+            anuncio.innerText="Usuario y/o Clave incorrectos. Vuelve a intentar";
+            usuario.style.borderColor="red";
+            clave.style.borderColor="red";
+        } 
+        
     }
-    
-    // si el usuario es correcto, ingrese a los datos
-    if (contadorIngreso>=1) { 
-        cuentaIngresada.innerHTML=`
-            <h2>Bienvenido, ${inputUsuario.value}!</h2>
-            <p>Saldo disponible</p>
-            <p>$50.565,05</p>
-            <button class="boton-salir-cuenta"> SALIR </button>
-        `
-        ingresarCuenta.style.display="none"
-        anuncio.style.display="none"
 
-        // click salir y para volver a seccion cuentas
-        const botonSalirCuenta = document.querySelector(".boton-salir-cuenta");
 
-        botonSalirCuenta.onclick = () =>{
-            ingresarCuenta.style.display="flex";
-            cuentaIngresada.style.display="none";
-            inputUsuario.value = "";
-            inputClave.value="";
-            anuncio.style.display="flex"
-
-        }
-    }else{anuncio.innerText="Usuario y/o Clave incorrectos. Vuelve a intentar"}
 }
-
-
-    

@@ -49,7 +49,7 @@ header,
 .sucursales-texto,
 .sucursales,
 .seccion-productos,
-form, 
+#contactanos, 
 footer,
 .contenedor-informacion div,
 .contenedor-informacion div a,
@@ -89,7 +89,7 @@ footer{
 .seccion-box,
 .seccion-impuestos,
 .seccion-productos,
-form, 
+#contactanos, 
 footer{
     padding: 6rem 0rem;
 }
@@ -288,6 +288,24 @@ header{
     font-size: 1.5rem;
     line-height: 3.5rem;
 }
+/* #toast {
+    visibility: hidden;
+    max-width: 50px;
+    height: 50px;
+    /*margin-left: -125px;*/
+    /*margin: auto;
+    background-color: #785c29;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+
+    position: fixed;
+    z-index: 1;
+    left: 0;right:0;
+    bottom: 30px;
+    font-size: 17px;
+    white-space: nowrap;
+} */
 /*****************************
     seccion-impuestos
 ******************************/
@@ -524,39 +542,39 @@ select:focus{
 }
 
 /*****************************
-    Billetera virtual FORM
+    Billetera virtual #contactanos
 ******************************/
-form{
+#contactanos{
     background-color: #FAFAFA;
     color: #424242;
 }
-form h3{
+#contactanos h3{
     font-size: 2rem;
     margin-bottom: 1.5rem;
 }
-form p{
+#contactanos p{
     margin-bottom: 1.5rem;
 }
-form label{
+#contactanos label{
     font-size: 1.2rem;
     margin: .5rem 0;
 }
-form input, form textarea{
+#contactanos input, #contactanos textarea{
     border-radius: 10px;
     border: 1px solid #a1a1a184;
     padding: .4rem 2.5rem;
     font-size: 1.5rem;
 }
-form input:hover,
-form textarea:hover{
+#contactanos input:hover,
+#contactanos textarea:hover{
     background-color: #a1a1a184;
     color: #FAFAFA;
 }
-form input:focus,
-form textarea:focus{
+#contactanos input:focus,
+#contactanos textarea:focus{
     outline: none;
 }
-form #submit{
+#contactanos #submit{
     margin-top: 1.5rem;
     background-color: transparent;
     font-family: 'Poppins', sans-serif;
@@ -564,7 +582,7 @@ form #submit{
     font-size: 1.2rem;
     color: #424242;
 }
-form #submit:hover{
+#contactanos #submit:hover{
     background-color: #a1a1a184;
     color: #FAFAFA;
 }
@@ -689,13 +707,13 @@ footer .contenedor-registro #ver-mas{
     }
     .seccion-sucursales p,
     .sucursales label,
-    .videos-youtube, form #submit,
-    form label,
-    form input, form textarea {
+    .videos-youtube, #contactanos #submit,
+    #contactanos label,
+    #contactanos input, #contactanos textarea {
         font-size: 1rem;
     }
     .seccion-productos h3,
-    form h3 {
+    #contactanos h3 {
         font-size: 1.7rem;
     }
     .videos-youtube a img {
@@ -735,7 +753,7 @@ footer .contenedor-registro #ver-mas{
     .seccion-box, 
     .seccion-impuestos, 
     .seccion-productos, 
-    form, 
+    #contactanos, 
     footer {
         padding: 3rem 0rem;
     }
@@ -761,13 +779,13 @@ footer .contenedor-registro #ver-mas{
     .seccion-sucursales p, 
     .sucursales label, 
     .videos-youtube, 
-    form #submit, 
-    form label, 
-    form input, 
-    form textarea {
+    #contactanos #submit, 
+    #contactanos label, 
+    #contactanos input, 
+    #contactanos textarea {
         font-size: .8rem;
     }
-    .seccion-productos h3, form h3 {
+    .seccion-productos h3, #contactanos h3 {
         font-size: 1.5rem;
         text-align: center;
     }
@@ -807,16 +825,16 @@ footer .contenedor-registro #ver-mas{
     .videos-youtube a img {
         width: 30%;
     }
-    .seccion-productos h3, form h3 {
+    .seccion-productos h3, #contactanos h3 {
         font-size: 1.2rem;
     }
     .seccion-sucursales p, 
     .sucursales label, 
     .videos-youtube, 
-    form #submit, 
-    form label, 
-    form input, 
-    form textarea {
+    #contactanos #submit, 
+    #contactanos label, 
+    #contactanos input, 
+    #contactanos textarea {
         font-size: .6rem;
     }
     
