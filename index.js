@@ -204,8 +204,6 @@ const cuentas = [
     }
 ]
 
-let contadorIngreso=false;
-
 botonIngresar.onclick = () => {
     console.log("click en boton ingresar a cta");
 
@@ -214,7 +212,6 @@ botonIngresar.onclick = () => {
         console.log(inputClave.value);
 
         if(cuentas[i].usuario == inputUsuario.value && cuentas[i].clave == inputClave.value) {
-            // contadorIngreso = true;
             // si el usuario es correcto, ingrese a los datos
             cuentaIngresada.innerHTML=`
                 <h2>Bienvenido, ${inputUsuario.value} !</h2>
@@ -229,14 +226,7 @@ botonIngresar.onclick = () => {
 
             botonSalirCuenta.onclick = () =>{
                 console.log("click en salir de cta");
-                // ingresarCuenta.style.display="flex";
-                // cuentaIngresada.style.display="none";
-                // inputUsuario.value="";
-                // inputClave.value="";
-                // anuncio.style.display="flex"
                 window.location.reload()
-
-
             }  
         }else{
             console.log("hay algo incorrecto");
