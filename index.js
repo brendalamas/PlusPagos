@@ -9,6 +9,8 @@ const seccionBox = document.querySelector(".seccion-box")
 const seccionImpuestos = document.querySelector(".seccion-impuestos")
 const seccionSucursales = document.querySelector(".seccion-sucursales")
 const seccionProductos = document.querySelector(".seccion-productos")
+const seccionCuenta = document.querySelector(".seccion-cuenta")
+
 const contactanos = document.querySelector("#contactanos")
 const footer = document.querySelector("footer")
 const seccionFacturas = document.querySelector(".seccion-facturas")
@@ -33,6 +35,7 @@ botonDescargar.onclick=()=>{
     header.style.display = "none"
     seccionCarrusel.style.display = "none"
     seccionBox.style.display = "none"
+    seccionCuenta.style.display = "none"
     seccionImpuestos.style.display = "none"
     seccionSucursales.style.display = "none"
     seccionProductos.style.display = "none"
@@ -52,6 +55,7 @@ botonAtras.onclick = () => {
     header.style.display = "flex"
     seccionCarrusel.style.display = "flex"
     seccionBox.style.display = "flex"
+    seccionCuenta.style.display = "flex"
     seccionImpuestos.style.display = "flex"
     seccionSucursales.style.display = "flex"
     seccionProductos.style.display = "flex"
