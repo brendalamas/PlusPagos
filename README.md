@@ -1,18 +1,29 @@
 
-# 👩🏻‍💻 EN PROCESO
+# 👩🏻‍💻 Proyecto Final - Plus Pagos
 <br>
-Proyecto realizado para el bootcamp de ASJ
+<p> Proyecto realizado para el bootcamp de ASJ</p>
 
-## 💻 Tecnologias utilizadas _(al momento)_
+## 🛠 **Funcionalidades**
+El proyecto es Responsivo
+>- **Sucursales** : Vas a poder encontrar la sucursal más cercana para pagar, retirar y depositar tu plata.
+>- **Facturas**: Redirecciona a una seccion donde segun el id de transaccion que ingreses es el monto de la factura a pagar.
+>- **Productos**: Aprende más sobre los productos que ofrece la empresa mediante videos informativos en Youtube.
+>- **Adherite**: Adherite a la billetera virtual de la empresa Plus Pagos dejando tus datos en un formulario.
+>- **Ingresar**: Ingresas tu usuario y contraseña, si la misma es correcto podes visulizar el saldo disponible en tu cuenta. De lo contrario, no podras ingresar a esta seccion.
+<br/>
 
+## 💻 **Tecnologias utilizadas**
 > <img style="width:5%" src="https://cdn-icons-png.flaticon.com/512/5968/5968267.png"/>
 > <img style="width:5%" src="https://cdn-icons-png.flaticon.com/512/732/732190.png"/>
 > <img style="width:5%" src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png"/>
 > <img style="width:5%" src="https://cdn-icons-png.flaticon.com/512/38/38401.png"/>
+> <img style="width:5%" src="https://cdn-icons-png.flaticon.com/512/919/919830.png"/>
+> <img style="width:5%" src="https://cdn-icons-png.flaticon.com/512/226/226777.png"/>
+> <img style="width:5%" src="https://cdn-icons-png.flaticon.com/512/919/919836.png"/>
 
 <br>
 
-### 🖋️ ¡Mirá como va quedando <a href="https://brendalamas.github.io/PlusPagos/"> acá</a>!
+### 🖋️ ¡Podes ver la web <a href="https://bl-pluspagos.netlify.app/"> acá</a>!
 <br>
 <br>
 <br>
